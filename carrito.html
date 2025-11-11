@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITO</title>
+</head>
+<body>
+    <h1>Bienvenido a tu carrito de compras</h1>
+
+    <div>
+        <h2>Producto 1: Kellogs</h2>
+        Precio: $<span id="precio1">23000</span>
+        <button onclick="agregarAlCarrito('Kellogs', 23000)">Agregar al carrito</button>
+    </div>
+
+    <div>
+        <h2>Producto 2: Yogurt</h2>
+        Precio: $<span id="precio2">15000</span>
+        <button onclick="agregarAlCarrito('Yogurt', 15000)">Agregar al carrito</button>
+    </div>
+
+    <div><h2>Producto 3: Fresas</h2>
+        Precio: $<span id="precio3">7000</span>
+        <button onclick="agregarAlCarrito('Fresas', 7000)">Agregar al carrito</button>
+    </div>
+    
+    <h2>Resumen del carrito</h2>
+    Total de ítems: <span id="total-items">0</span>
+    Total a pagar: $<span id="total-precio">0</span>
+
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+    <script src="compras.js"></script>
+</body>
+
+</html>
